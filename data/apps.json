@@ -1,0 +1,55 @@
+{
+  "apps": [
+    {
+      "id": "turbo-music-apk",
+      "name": "Turbo Music",
+      "version": "1.2.0",
+      "platform": "Android",
+      "summary": "YouTube Music-style streaming app. Dark red UI, threaded playback, shuffle and repeat.",
+      "description": "Turbo Music is a Python/KivyMD Android app that lets you stream music from YouTube with a clean, dark interface inspired by YouTube Music. All stream fetching happens on background threads so the UI stays smooth. Supports shuffle, repeat, and full playback controls.",
+      "icon_url": "",
+      "apk_url": "https://github.com/sudipta/turbo-music/releases/latest/download/turbo-music.apk",
+      "github": "https://github.com/sudipta/turbo-music",
+      "tags": ["Python", "KivyMD", "Streaming", "Music"],
+      "screenshots": [],
+      "changelog": [
+        { "version": "1.2.0", "note": "Fixed rapid-cycling playback bug. Wired shuffle and repeat modes." },
+        { "version": "1.1.0", "note": "Threaded stream fetching. UI no longer freezes on load." },
+        { "version": "1.0.0", "note": "Initial release with basic playback and search." }
+      ]
+    },
+    {
+      "id": "ssc-app-apk",
+      "name": "SSC Reasoning Practice",
+      "version": "2.0.0",
+      "platform": "Android",
+      "summary": "15+ question generators for SSC CGL/CHSL reasoning. Tracks progress via SQLite.",
+      "description": "A full-featured offline reasoning practice app for SSC CGL and CHSL preparation. Generates deterministic, unlimited questions for number series, coding-decoding, blood relations, analogies, and more. All progress is tracked locally via SQLite.",
+      "icon_url": "",
+      "apk_url": "https://github.com/sudipta/ssc-reasoning-app/releases/latest/download/ssc-reasoning.apk",
+      "github": "https://github.com/sudipta/ssc-reasoning-app",
+      "tags": ["Python", "KivyMD", "Education", "SSC", "Offline"],
+      "screenshots": [],
+      "changelog": [
+        { "version": "2.0.0", "note": "Added 5 new question types. Redesigned progress dashboard." },
+        { "version": "1.0.0", "note": "Initial release with 10 question generators and SQLite tracking." }
+      ]
+    },
+    {
+      "id": "turbo-dash-apk",
+      "name": "TURBO DASH",
+      "version": "1.0.0",
+      "platform": "Android",
+      "summary": "Pseudo-3D car racing game built with Pygame. Touch controls, increasing difficulty.",
+      "description": "A fun pseudo-3D segment-based racing game built with Python and Pygame. Uses perspective projection to render a 3D-looking road on a 2D canvas. Touch buttons for mobile. Speed and obstacle frequency increase as you progress.",
+      "icon_url": "",
+      "apk_url": "https://github.com/sudipta/turbo-dash/releases/latest/download/turbo-dash.apk",
+      "github": "https://github.com/sudipta/turbo-dash",
+      "tags": ["Python", "Pygame", "Game", "Racing"],
+      "screenshots": [],
+      "changelog": [
+        { "version": "1.0.0", "note": "Initial release." }
+      ]
+    }
+  ]
+}
