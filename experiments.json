@@ -1,0 +1,58 @@
+{
+  "experiments": [
+    {
+      "id": "audio-fingerprinter",
+      "title": "On-Device Audio Fingerprinter",
+      "icon": "🎼",
+      "description": "Extract BPM, key, loudness, and spectral features from audio files entirely on-device using TarsosDSP. Part of the MediaApp recommendation pipeline.",
+      "status": "in-progress",
+      "tags": ["Python", "Audio", "TarsosDSP", "Android"],
+      "url": null
+    },
+    {
+      "id": "telegram-json-cms",
+      "title": "Telegram → GitHub JSON CMS",
+      "icon": "🤖",
+      "description": "A Node.js Telegram bot that lets me add projects, posts, and apps to this website by sending messages from my phone. Updates JSON files via GitHub API and triggers a Pages rebuild.",
+      "status": "complete",
+      "tags": ["Node.js", "Telegram Bot", "GitHub API", "CMS"],
+      "url": "https://github.com/sudipta/telegram-cms-bot"
+    },
+    {
+      "id": "rag-study-assistant",
+      "title": "RAG Study Assistant",
+      "icon": "📚",
+      "description": "A Retrieval-Augmented Generation tool that lets me ask questions about my own UPSC notes. Planned to run locally on-device without any API calls.",
+      "status": "idea",
+      "tags": ["Python", "RAG", "LLM", "UPSC", "On-device AI"],
+      "url": null
+    },
+    {
+      "id": "youtube-analytics-tracker",
+      "title": "YouTube Analytics Tracker",
+      "icon": "📊",
+      "description": "A Python script that pulls channel analytics via the YouTube Data API and saves trends locally. Useful for understanding which content format works best.",
+      "status": "idea",
+      "tags": ["Python", "YouTube API", "Analytics"],
+      "url": null
+    },
+    {
+      "id": "map-quiz-app",
+      "title": "Geography Map Quiz App",
+      "icon": "🗺️",
+      "description": "An interactive map-based quiz app in KivyMD that tests geography knowledge — country capitals, rivers, mountain ranges. Aimed at UPSC preparation.",
+      "status": "planned",
+      "tags": ["Python", "KivyMD", "Geography", "UPSC"],
+      "url": null
+    },
+    {
+      "id": "news-summariser",
+      "title": "Daily Current Affairs Summariser",
+      "icon": "📰",
+      "description": "A Python automation that fetches top Indian current affairs headlines daily, summarises them using an LLM, and sends a Telegram digest every morning.",
+      "status": "planned",
+      "tags": ["Python", "Automation", "LLM", "Telegram", "UPSC"],
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Sudipta",
+  "tagline": "AI developer, Python builder, Android tinkerer",
+  "badges": [
+    "Python", "Kivy / KivyMD", "Android", "Machine Learning",
+    "Automation", "AI", "Vanilla JS"
+  ],
+  "bio": [
+    "I'm Sudipta — a student and self-taught developer based in India. I build things at the intersection of AI, automation, and practical software that solves real problems.",
+    "My primary stack is Python. I build Android applications using Kivy and KivyMD, experiment with machine learning models, and write automation tools that make repetitive work disappear.",
+    "Outside of code, I'm fascinated by History, Geography, and how technology shapes civilisations. I document my learning journey publicly — this site is part of that effort.",
+    "I believe in building in public, learning by doing, and shipping before it's perfect."
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "JavaScript", "HTML/CSS", "Kotlin (learning)"]
+    },
+    {
+      "category": "Mobile",
+      "items": ["Kivy", "KivyMD", "Android SDK", "APK packaging"]
+    },
+    {
+      "category": "AI / ML",
+      "items": ["scikit-learn", "TensorFlow basics", "NLP", "Automation pipelines"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "GitHub Actions", "Telegram Bot API", "GitHub API"]
+    },
+    {
+      "category": "Interests",
+      "items": ["History", "Geography", "Productivity", "Open source"]
+    }
+  ],
+  "stats": [
+    { "value": "10+", "label": "Projects built" },
+    { "value": "5+",  "label": "Android apps" },
+    { "value": "2+",  "label": "Years coding" },
+    { "value": "∞",   "label": "Curiosity" }
+  ],
+  "contact": [
+    {
+      "label": "GitHub",
+      "value": "github.com/sudipta",
+      "url": "https://github.com/sudipta",
+      "icon": "🐙"
+    },
+    {
+      "label": "Telegram",
+      "value": "@sudipta_dev",
+      "url": "https://t.me/sudipta_dev",
+      "icon": "✈️"
+    },
+    {
+      "label": "Email",
+      "value": "sudipta@example.com",
+      "url": "mailto:sudipta@example.com",
+      "icon": "✉️"
+    },
+    {
+      "label": "YouTube",
+      "value": "The Better Self",
+      "url": "https://youtube.com/@TheBetterSelf",
+      "icon": "▶️"
+    }
+  ]
+}

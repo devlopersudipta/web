@@ -1,0 +1,195 @@
+{
+  "categories": [
+    {
+      "id": "ai",
+      "label": "AI & ML",
+      "icon": "🤖",
+      "notes": [
+        {
+          "title": "Machine Learning — Core Concepts",
+          "summary": "Supervised vs unsupervised vs reinforcement learning, model evaluation, and overfitting.",
+          "updated": "2024-11-10",
+          "tags": ["ML", "Fundamentals"],
+          "points": [
+            "Supervised learning: learn a mapping from inputs to labelled outputs.",
+            "Unsupervised: find structure in unlabelled data (clustering, dimensionality reduction).",
+            "Overfitting: model memorises training data; fix with regularisation, dropout, or more data.",
+            "Bias-variance trade-off: high bias = underfitting; high variance = overfitting.",
+            "Evaluation: accuracy, precision, recall, F1, ROC-AUC — choose based on the problem."
+          ]
+        },
+        {
+          "title": "On-Device ML for Android",
+          "summary": "Running inference on-device using TFLite, ONNX, and feature extraction with TarsosDSP.",
+          "updated": "2024-12-01",
+          "tags": ["Android", "TFLite", "On-device AI"],
+          "points": [
+            "TensorFlow Lite runs quantised models efficiently on Android CPU/GPU/NPU.",
+            "ONNX Runtime for Android is an alternative for models trained in PyTorch.",
+            "TarsosDSP is a Java/Kotlin audio analysis library — extracts BPM, pitch, energy.",
+            "Keep inference at index time (not real-time) to avoid battery drain.",
+            "k-NN similarity search on feature vectors is simple, fast, and explainable."
+          ]
+        },
+        {
+          "title": "Large Language Models — Key Ideas",
+          "summary": "How transformers work, attention mechanisms, and practical usage via APIs.",
+          "updated": "2024-10-05",
+          "tags": ["LLM", "Transformers", "GPT"],
+          "points": [
+            "Transformer architecture: encoder-decoder or decoder-only (GPT-style).",
+            "Attention = weighted sum of values, where weights come from query-key similarity.",
+            "Prompt engineering: be specific, give examples, break tasks into steps.",
+            "Temperature controls randomness; top-p controls diversity of sampling.",
+            "Fine-tuning vs RAG: fine-tuning bakes knowledge in; RAG retrieves it at runtime."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "icon": "🐍",
+      "notes": [
+        {
+          "title": "Python — Things I Always Forget",
+          "summary": "Walrus operator, dataclasses, context managers, and other useful patterns.",
+          "updated": "2024-11-20",
+          "tags": ["Python", "Quick Reference"],
+          "points": [
+            "Walrus operator := assigns and returns: `if (n := len(a)) > 10:`.",
+            "dataclasses: `@dataclass` auto-generates __init__, __repr__, __eq__.",
+            "Context managers: implement __enter__ and __exit__, or use @contextmanager.",
+            "functools.lru_cache: memoises function results. Use maxsize=None for unlimited.",
+            "pathlib.Path is almost always better than os.path for file operations."
+          ]
+        },
+        {
+          "title": "Threading vs Multiprocessing in Python",
+          "summary": "When to use threads, when to use processes, and the GIL explained simply.",
+          "updated": "2024-10-15",
+          "tags": ["Python", "Concurrency"],
+          "points": [
+            "GIL (Global Interpreter Lock) prevents true parallel CPU execution in threads.",
+            "Use threading for I/O-bound tasks: network requests, file reads, UI updates.",
+            "Use multiprocessing for CPU-bound tasks: number crunching, image processing.",
+            "asyncio is best for many concurrent I/O-bound tasks with low overhead.",
+            "In Kivy, always run blocking work in a thread; use Clock.schedule_once to update UI."
+          ]
+        },
+        {
+          "title": "KivyMD Patterns That Work",
+          "summary": "Practical patterns for building real Android apps with KivyMD 1.2.x.",
+          "updated": "2024-12-05",
+          "tags": ["KivyMD", "Kivy", "Android"],
+          "points": [
+            "MDBottomSheet: set bg_color or it renders transparent on some devices.",
+            "Thread to fetch data, then use Clock.schedule_once(lambda dt: update_ui(), 0).",
+            "MDRecycleView with RecycleBoxLayout for long lists — avoids rebuilding widgets.",
+            "app.theme_cls.theme_style = 'Dark' must be set before any screen is built.",
+            "StringProperty and ListProperty trigger UI updates automatically — use them."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "label": "History",
+      "icon": "🏛️",
+      "notes": [
+        {
+          "title": "Indus Valley Civilisation",
+          "summary": "Chalcolithic farming communities and the Harappan urban phase — key facts.",
+          "updated": "2024-09-10",
+          "tags": ["Ancient India", "UPSC", "History"],
+          "points": [
+            "IVC flourished approx. 2600–1900 BCE in present-day Pakistan and northwest India.",
+            "Major sites: Mohenjo-daro, Harappa, Dholavira, Lothal, Rakhigarhi.",
+            "Features: planned cities, advanced drainage, standardised weights and measures.",
+            "Script remains undeciphered — a major unsolved problem in archaeology.",
+            "Decline likely due to combination of climate change, river shifts, and migration."
+          ]
+        },
+        {
+          "title": "Kohinoor Diamond — History",
+          "summary": "Origin, trail of ownership, and the ongoing repatriation debate.",
+          "updated": "2024-10-01",
+          "tags": ["History", "India", "Colonial", "Artifacts"],
+          "points": [
+            "Originated in the Golconda mines of the Deccan, possibly 13th century.",
+            "Passed through Kakatiya, Delhi Sultanate, Mughals, Nader Shah, Sikh Empire.",
+            "Came to the British Crown after the 1849 annexation of Punjab.",
+            "Currently part of the Crown Jewels at the Tower of London.",
+            "India, Pakistan, Afghanistan, and Iran have all claimed repatriation rights."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "label": "Geography",
+      "icon": "🌍",
+      "notes": [
+        {
+          "title": "Indian Political Geography — Delimitation",
+          "summary": "Delimitation process, the 2026 deadline, and political implications for South India.",
+          "updated": "2024-11-28",
+          "tags": ["India", "Geography", "Polity", "UPSC"],
+          "points": [
+            "Delimitation: redrawing of Lok Sabha and state assembly constituency boundaries.",
+            "Based on population — last delimitation was 1971 census data (frozen in 2002).",
+            "2026 deadline: freeze on seat allocation ends; new delimitation can begin post-2026 census.",
+            "South Indian states fear losing seats to high-population north because they controlled population growth better.",
+            "Article 82 and 170 govern Lok Sabha and state assembly delimitation respectively."
+          ]
+        },
+        {
+          "title": "Physical Geography — Basics",
+          "summary": "Plate tectonics, river systems, and climate classification.",
+          "updated": "2024-08-15",
+          "tags": ["Geography", "Physical", "UPSC"],
+          "points": [
+            "Plate tectonics: Earth's lithosphere is divided into plates that move on the asthenosphere.",
+            "Convergent plates → mountains/trenches; divergent → ridges/rifts; transform → earthquakes.",
+            "Himalayas formed by collision of Indian and Eurasian plates — still rising ~5mm/year.",
+            "Köppen climate classification: A (tropical), B (arid), C (temperate), D (continental), E (polar).",
+            "India's rivers: Himalayan (perennial, snow-fed) vs Peninsular (seasonal, rain-fed)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "label": "Productivity",
+      "icon": "⚡",
+      "notes": [
+        {
+          "title": "Systems Over Goals",
+          "summary": "Why building repeatable systems beats setting ambitious targets.",
+          "updated": "2024-10-25",
+          "tags": ["Productivity", "Mindset"],
+          "points": [
+            "Goals are destinations; systems are the vehicle. You need both, but systems win long-term.",
+            "Reduce friction for good habits: if starting is hard, you won't start.",
+            "Time-blocking > to-do lists: assign tasks to specific time slots.",
+            "Weekly review: what worked, what didn't, what's next week's priority?",
+            "Shipping > perfecting: a good-enough thing that exists beats a perfect thing that doesn't."
+          ]
+        },
+        {
+          "title": "Learning Efficiently",
+          "summary": "Active recall, spaced repetition, and the Feynman technique.",
+          "updated": "2024-09-20",
+          "tags": ["Learning", "Study", "Productivity"],
+          "points": [
+            "Active recall: test yourself instead of re-reading. Retrieval strengthens memory.",
+            "Spaced repetition: review material at increasing intervals (Anki implements this).",
+            "Feynman technique: explain a concept simply. Where you stumble = gaps to fill.",
+            "Interleaving: mix topics during study. Harder short-term, better long-term retention.",
+            "Output > input: writing, building, and teaching beat consuming alone."
+          ]
+        }
+      ]
+    }
+  ]
+}
