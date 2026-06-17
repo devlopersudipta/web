@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0f14" />
+
+  <!-- SEO -->
+  <title>Sudipta — AI Developer & Builder</title>
+  <meta name="description" content="Sudipta's digital headquarters. AI developer, Python programmer, Android app builder. Exploring machine learning, automation, and building things that matter." />
+  <meta name="keywords" content="Sudipta, AI developer, Python, Android, Kivy, KivyMD, machine learning, automation, portfolio" />
+  <meta name="author" content="Sudipta" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sudipta.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sudipta — AI Developer & Builder" />
+  <meta property="og:description" content="AI developer, Python programmer, Android app builder. Exploring machine learning, automation, and building things that matter." />
+  <meta property="og:url" content="https://sudipta.github.io/" />
+  <meta property="og:image" content="https://sudipta.github.io/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sudipta — AI Developer & Builder" />
+  <meta name="twitter:description" content="AI developer, Python programmer, Android app builder." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sudipta",
+    "url": "https://sudipta.github.io/",
+    "description": "AI Developer, Python Programmer, Android App Builder",
+    "sameAs": [
+      "https://github.com/sudipta"
+    ]
+  }
+  </script>
+</head>
+<body data-page="home">
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" data-nav="home" aria-label="Sudipta home">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">sudipta</span>
+        <span class="logo-bracket">]</span>
+        <span class="logo-cursor">_</span>
+      </a>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#home"      class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="#projects"  class="nav-link" data-nav="projects">Projects</a></li>
+        <li><a href="#apps"      class="nav-link" data-nav="apps">Apps</a></li>
+        <li><a href="#journey"   class="nav-link" data-nav="journey">Journey</a></li>
+        <li><a href="#vault"     class="nav-link" data-nav="vault">Vault</a></li>
+        <li><a href="#experiments" class="nav-link" data-nav="experiments">Lab</a></li>
+        <li><a href="#blog"      class="nav-link" data-nav="blog">Blog</a></li>
+        <li><a href="#about"     class="nav-link" data-nav="about">About</a></li>
+        <li><a href="#contact"   class="nav-link nav-link--cta" data-nav="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search projects, apps, posts, notes…" autocomplete="off" spellcheck="false" />
+        <kbd class="search-esc" aria-label="Close search">ESC</kbd>
+      </div>
+      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
+    </div>
+  </div>
+
+  <!-- Floating Search Button -->
+  <button class="fab-search" id="fabSearch" aria-label="Open search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+  </button>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: HOME / HERO
+    ═══════════════════════════════════════════ -->
+    <section class="section section--home" id="home" aria-label="Introduction">
+      <div class="hero">
+        <div class="hero-terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal-title">sudipta@dev:~</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-line"><span class="term-prompt">$</span> <span class="term-cmd" data-type="whoami">whoami</span></div>
+            <div class="terminal-line terminal-line--out" id="termOut1"></div>
+            <div class="terminal-line"><span class="term-prompt">$</span> <span class="term-cmd" data-type="interests">cat interests.txt</span></div>
+            <div class="terminal-line terminal-line--out" id="termOut2"></div>
+            <div class="terminal-line terminal-line--active">
+              <span class="term-prompt">$</span>
+              <span class="term-cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">Building what doesn't exist yet</p>
+          <h1 class="hero-name">
+            Hi, I'm <span class="hero-name--accent">Sudipta</span>
+          </h1>
+          <p class="hero-tagline">
+            AI developer &amp; student. I write Python, build Android apps with Kivy,
+            and chase the intersection of machine learning, automation, and things
+            that are genuinely useful.
+          </p>
+          <div class="hero-badges" id="heroBadges" aria-label="Technologies">
+            <!-- injected by JS from profile.json -->
+          </div>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn--primary">See my work</a>
+            <a href="#blog" class="btn btn--ghost">Read the blog</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Projects Strip -->
+      <div class="featured-strip">
+        <p class="featured-label">Featured projects</p>
+        <div class="featured-cards" id="featuredCards">
+          <!-- injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: PROJECTS
+    ═══════════════════════════════════════════ -->
+    <section class="section section--projects" id="projects" aria-label="Projects">
+      <div class="section-header">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Open-source tools, experiments, and side projects. All code lives on GitHub.</p>
+      </div>
+
+      <div class="filter-bar" role="toolbar" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <!-- dynamic filters injected by JS -->
+      </div>
+
+      <div class="projects-grid" id="projectsGrid" role="list" aria-live="polite">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: APPS
+    ═══════════════════════════════════════════ -->
+    <section class="section section--apps" id="apps" aria-label="Android Applications">
+      <div class="section-header">
+        <span class="section-eyebrow">Android / Kivy</span>
+        <h2 class="section-title">Apps Library</h2>
+        <p class="section-desc">Android applications built with Python, Kivy, and KivyMD. Download APKs directly.</p>
+      </div>
+
+      <div class="apps-search-bar">
+        <svg class="apps-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="appsSearchInput" class="apps-search-input" placeholder="Search apps…" aria-label="Search apps" />
+      </div>
+
+      <div class="apps-grid" id="appsGrid" role="list" aria-live="polite">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- App Modal -->
+    <div class="modal-overlay" id="appModal" role="dialog" aria-modal="true" aria-labelledby="appModalTitle" hidden>
+      <div class="modal modal--app">
+        <button class="modal-close" id="appModalClose" aria-label="Close app details">✕</button>
+        <div class="modal-content" id="appModalContent"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: LEARNING JOURNEY
+    ═══════════════════════════════════════════ -->
+    <section class="section section--journey" id="journey" aria-label="Learning Journey">
+      <div class="section-header">
+        <span class="section-eyebrow">Where I've been &amp; where I'm going</span>
+        <h2 class="section-title">Learning Journey</h2>
+        <p class="section-desc">Milestones, turning points, and goals — documented as they happen.</p>
+      </div>
+
+      <div class="journey-layout">
+        <div class="timeline" id="timeline" role="list">
+          <!-- injected by JS -->
+        </div>
+        <div class="journey-goals">
+          <h3 class="goals-title">Current Goals</h3>
+          <ul class="goals-list" id="goalsList" role="list">
+            <!-- injected by JS -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: KNOWLEDGE VAULT
+    ═══════════════════════════════════════════ -->
+    <section class="section section--vault" id="vault" aria-label="Knowledge Vault">
+      <div class="section-header">
+        <span class="section-eyebrow">Notes &amp; references</span>
+        <h2 class="section-title">Knowledge Vault</h2>
+        <p class="section-desc">Structured notes on AI, Python, History, Geography, and Productivity.</p>
+      </div>
+
+      <div class="vault-tabs" role="tablist" aria-label="Note categories" id="vaultTabs">
+        <!-- injected by JS -->
+      </div>
+
+      <div class="vault-content" id="vaultContent" role="tabpanel" aria-live="polite">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: EXPERIMENTS / LAB
+    ═══════════════════════════════════════════ -->
+    <section class="section section--experiments" id="experiments" aria-label="Experiments Lab">
+      <div class="section-header">
+        <span class="section-eyebrow">Untamed ideas</span>
+        <h2 class="section-title">The Lab</h2>
+        <p class="section-desc">Experiments, research ideas, and mini-tools that don't fit anywhere else.</p>
+      </div>
+
+      <div class="experiments-grid" id="experimentsGrid" role="list">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: BLOG
+    ═══════════════════════════════════════════ -->
+    <section class="section section--blog" id="blog" aria-label="Blog">
+      <div class="section-header">
+        <span class="section-eyebrow">Thinking out loud</span>
+        <h2 class="section-title">Blog</h2>
+        <p class="section-desc">Articles on AI, programming, learning, and whatever's on my mind.</p>
+      </div>
+
+      <div class="blog-filter" role="toolbar" aria-label="Filter posts">
+        <button class="filter-btn active" data-blog-filter="all">All</button>
+        <!-- dynamic filters -->
+      </div>
+
+      <div class="blog-grid" id="blogGrid" role="list" aria-live="polite">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- Blog Post Overlay -->
+    <div class="modal-overlay" id="blogModal" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle" hidden>
+      <div class="modal modal--blog">
+        <button class="modal-close" id="blogModalClose" aria-label="Close article">✕</button>
+        <article class="modal-content" id="blogModalContent"></article>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: ABOUT
+    ═══════════════════════════════════════════ -->
+    <section class="section section--about" id="about" aria-label="About Sudipta">
+      <div class="about-layout">
+        <div class="about-text">
+          <span class="section-eyebrow">Who I am</span>
+          <h2 class="section-title">About</h2>
+          <div class="about-bio" id="aboutBio">
+            <!-- injected by JS -->
+          </div>
+          <div class="skills-block" id="skillsBlock">
+            <!-- injected by JS -->
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-avatar" id="aboutAvatar" aria-label="Sudipta">S</div>
+            <div class="about-stats" id="aboutStats">
+              <!-- injected by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: CONTACT
+    ═══════════════════════════════════════════ -->
+    <section class="section section--contact" id="contact" aria-label="Contact">
+      <div class="section-header">
+        <span class="section-eyebrow">Get in touch</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Have a project, question, or just want to say hi — reach out.</p>
+      </div>
+
+      <div class="contact-grid" id="contactGrid">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-bracket">[</span><span class="logo-text">sudipta</span><span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-note">Built with HTML, CSS, and Vanilla JS. Content managed via Telegram → GitHub API.</p>
+      <p class="footer-copy">© <span id="footerYear"></span> Sudipta. Open source on GitHub.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

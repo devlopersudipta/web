@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sudipta.github.io/sitemap.xml
