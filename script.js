@@ -833,25 +833,42 @@ function revealObserver() {
 
 /* ─── BOOT ───────────────────────────────────────────────── */
 async function boot() {
-  initNav();
-  initTerminal();
-  initModals();
-  initSearch();
-  revealObserver();
+    console.log("BOOT START");
 
-  // Load all data in parallel
-  await Promise.all([
-    loadProfile(),
-    loadProjects(),
-    loadApps(),
-    loadJourney(),
-    loadVault(),
-    loadExperiments(),
-    loadBlog(),
-  ]);
+    try {
+        initNav();
+        console.log("nav ok");
 
-  // Build search index after all data loaded
-  buildSearchIndex();
+        initTerminal();
+        console.log("terminal ok");
+
+        initModals();
+        console.log("modals ok");
+
+        initSearch();
+        console.log("search ok");
+
+        revealObserver();
+        console.log("reveal ok");
+
+        await Promise.all([
+            loadProfile(),
+            loadProjects(),
+            loadApps(),
+            loadJourney(),
+            loadVault(),
+            loadExperiments(),
+            loadBlog(),
+        ]);
+
+        console.log("all data loaded");
+
+        buildSearchIndex();
+        console.log("search index built");
+
+    } catch(e) {
+        console.error("BOOT ERROR:", e);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', boot);
